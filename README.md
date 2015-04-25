@@ -24,7 +24,9 @@
                 3개부터 스택       
 
 컴파일 : cl [파일명.c] /c
+
 어셈블 : nasm -f win32 -o asm_main.obj nasm_main.asm
+
 역어셈블 : cl [파일명.c] /FAs 
 
 추천서적 : PC Assembly Language EBOOK

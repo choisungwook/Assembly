@@ -23,6 +23,8 @@
    __fastcall   2개까지 레지스터    호출당한자    @함수@인자크기
                 3개부터 스택       
 
-cl [파일명.c] /FAs --> 마이크로디어셈
+컴파일 : cl [파일명.c] /c
+어셈블 : nasm -f win32 -o asm_main.obj nasm_main.asm
+역어셈블 : cl [파일명.c] /FAs 
 
 추천서적 : PC Assembly Language EBOOK

@@ -17,9 +17,13 @@
 
 5. Calling Convention(함수 호출 규약)
    C함수를 어떤 어셈으로 만들것인가
+
    인자전달             스택파괴      함수이름
+
    __cdecl      stack               호출자        _함수
+   
    __stdcall    stack               호출당한자    _함수@인자크기
+   
    __fastcall   2개까지 레지스터    호출당한자    @함수@인자크기
                 3개부터 스택       
 

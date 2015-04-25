@@ -12,8 +12,10 @@ int Add(int a, int b)
 			
 	int c = 0; //mov dword[ebp-4], 0x00
 
-	c = a + b; //mov dword[ebp-4], dword[ebp+8]
-				//add dword[ebp-4], dword[ebp+12]
+	//어셈은 메모리끼리 연산이 불가능
+	c = a + b; //mov eax, dword[ebp+8]
+				//add eax, dword[ebp+12]
+				//mov dword[ebp-4], eax
 	return c; //mov eax, dword[ebp-4]	
 
 	//epilog
